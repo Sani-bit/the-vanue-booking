@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("cal-background.jpg");
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .calendar-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .calendar-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #be1c5d;
+    color: white;
+  }
+  
+  .calendar-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .calendar-header p {
+    font-size: 14px;
+  }
+  
+  .calendar {
+    padding: 20px;
+  }
+  
+  .month-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .day, .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .day {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .day:hover {
+    background-color: #d9d9d9;
+    transform: scale(1.1);
+  }
+  
+  .available {
+    background-color: #be1c5d;
+    color: white;
+  }
+  
+  .available:hover {
+    background-color: #e54e92;
+    transform: scale(1.1);
+  }
+  
+  .nav-btn {
+    background-color: #be1c5d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #e54e92;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confetti on Page Load</title>
+  <style>
+    p{
+        font-size: 50vw;
+        color: gold;
+        font-weight: bold;
+        font-size: 5rem;
+        font-style: italic;
+        text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+      background-image: url("watercolor.avif");
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <p>Successfully Registered...<br></p>
+  <p>Thank You</p>
+  <!-- Include Canvas Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Launch confetti effect on page load
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+    });
+  </script>
+</body>
+</html>

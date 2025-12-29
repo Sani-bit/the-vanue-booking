@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Registration</title>
+  <link rel="stylesheet" href="vendor.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register as a Vendor</h2>
+    <form action="/submit_vendor_registration" method="post">
+      <!-- Vendor Information -->
+      <label for="business_name">Business Name</label>
+      <input type="text" id="business_name" name="business_name" required>
+
+      <label for="owner_name">Owner's Full Name</label>
+      <input type="text" id="owner_name" name="owner_name" required>
+
+      <label for="contact_email">Contact Email</label>
+      <input type="email" id="contact_email" name="contact_email" required>
+
+      <label for="phone_number">Phone Number</label>
+      <input type="tel" id="phone_number" name="phone_number" required>
+
+      <!-- Service Category -->
+      <label for="service_category">Service Category</label>
+      <select id="service_category" name="service_category" required>
+        <option value="" disabled selected>Select a category</option>
+        <option value="catering">Catering</option>
+        <option value="decor">Decor</option>
+        <option value="photography">Photography</option>
+        <option value="music">Music</option>
+        <option value="lighting">Lighting</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Service Description -->
+      <label for="service_description">Service Description</label>
+      <textarea id="service_description" name="service_description" rows="4" placeholder="Describe your services" required></textarea>
+
+      <!-- Availability and Location -->
+      <label for="service_area">Service Area (City/Region)</label>
+      <input type="text" id="service_area" name="service_area" required>
+
+      <!-- Submit Button -->
+      <button type="submit" onclick="location.href='Success.html'">Register as Vendor</button>
+    </form>
+  </div>
+</body>
+</html>
