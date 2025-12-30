@@ -129,8 +129,9 @@
             </div>
         </div>
     </div>
-    <script src="./searchengine.js">
+    <script src="./searchengine.js" defer></script>
 
+    <script>
         mixpanel.track("Page Loaded", {
             page: window.location.pathname
         });

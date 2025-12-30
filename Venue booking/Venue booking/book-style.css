@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-image: url("Udaipur.jpg");
+    background-image: url("./Udaipur.jpg");
     color: #333;
     display: flex;
     justify-content: center;
