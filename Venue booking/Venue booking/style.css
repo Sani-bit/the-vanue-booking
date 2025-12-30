@@ -16,7 +16,7 @@
     width: 100px;
 }
 .logo {
-    background-image: url("TheVenue_logo.png");
+    background-image: url("./TheVenue_logo.png");
     background-size: cover;
     height: 50px;
     width: 90%;
@@ -125,7 +125,7 @@
 }
 /**hero-section**/
 .hero-sec {
-    background-image: url("hero1.png");
+    background-image: url("./hero1.png");
     height: 500px;
     background-size: cover;
     display: flex;
@@ -226,7 +226,7 @@ ul a {
     align-items: center;
 }
 .logo {
-    background-image: url("TheVenue_logo.png");
+    background-image: url("./TheVenue_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;

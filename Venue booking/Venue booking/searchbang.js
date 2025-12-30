@@ -74,6 +74,6 @@ const displayItem = (items)=> {
 displayItem(categories);
 
 // main.js
-mixpanel.track("Page Loaded", {
-  page: window.location.pathname
-});
+// mixpanel.track("Page Loaded", {
+//   page: window.location.pathname
+// });

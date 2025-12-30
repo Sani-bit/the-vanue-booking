@@ -22,7 +22,7 @@
     width: 100px;
 }
 .logo {
-    background-image: url("TheVenue_logo.png");
+    background-image: url("./TheVenue_logo.png");
     background-size: cover;
     height: 50px;
     width: 90%;
