@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product View</title>
+  <link rel="stylesheet" href="./viewstyle.css">
+
+  <script type="text/javascript">
+    (function (e, c) {
+      if (!c.__SV) {
+        var l, h; window.mixpanel = c; c._i = []; c.init = function (q, r, f) {
+          function t(d, a) { var g = a.split("."); 2 == g.length && (d = d[g[0]], a = g[1]); d[a] = function () { d.push([a].concat(Array.prototype.slice.call(arguments, 0))) } } var b = c; "undefined" !== typeof f ? b = c[f] = [] : f = "mixpanel"; b.people = b.people || []; b.toString = function (d) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); d || (a += " (stub)"); return a }; b.people.toString = function () { return b.toString(1) + ".people (stub)" }; l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+          for (h = 0; h < l.length; h++)t(b, l[h]); var n = "set set_once union unset remove delete".split(" "); b.get_group = function () { function d(p) { a[p] = function () { b.push([g, [p].concat(Array.prototype.slice.call(arguments, 0))]) } } for (var a = {}, g = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), m = 0; m < n.length; m++)d(n[m]); return a }; c._i.push([q, r, f])
+        }; c.__SV = 1.2; var k = e.createElement("script"); k.type = "text/javascript"; k.async = !0; k.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" ===
+          e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; e = e.getElementsByTagName("script")[0]; e.parentNode.insertBefore(k, e)
+      }
+    })(document, window.mixpanel || [])
+
+
+    mixpanel.init('f11d51802a52bc515ba07d55eb4ab01c', {
+      track_pageview: false,
+      autotrack: false,
+      record_sessions_percent: 100,
+      api_host: 'https://api-eu.mixpanel.com',
+    })
+
+    mixpanel.track("Palace Viewed");
+
+  </script>
+
+</head>
+
+<body>
+  <div class="product-page">
+    <!-- Product Images -->
+    <div class="product-images">
+      <img src="./awadhpalace1.png" alt="Main Product Image" class="main-image">
+      <div class="thumbnail-gallery">
+        <img src="./awadh-palace.avif" alt="Thumbnail 1" class="thumbnail">
+        <img src="./awadhpalace2.png" alt="Thumbnail 2" class="thumbnail">
+        <img src="./awadhpalace3.png" alt="Thumbnail 3" class="thumbnail">
+        <img src="./awadhpalace4.png" alt="Thumbnail 4" class="thumbnail">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+      <h1 class="product-title">Awadh Palace</h1>
+      <p class="product-price">$199.99</p>
+      <div class="rating-section">
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star half">★</span>
+        <span class="rating-text">(4.5/5)</span>
+      </div>
+      <p class="product-description">
+        Hotel Awadh Palace, Ayodhya Nagar, Bhopal offers stylish and elegant accommodation across well-appointed
+        rooms and suites with all basic facilities to pamper your guests. The admirable team of professional decorators
+        can take care of your needs. Delicious cuisines in the vegetarian and non-vegetarian menu are offered by the
+        banquet. It also delights your guests with alcoholic beverages. The venue has a warm and cozy ambiance that
+        makes everyone feel welcomed. Occupying a prime location in the city and offering a range of top-notch
+        facilities and services, you have all the right reasons to choose Hotel Awadh Palace, Bhopal, for your big day
+
+        Hall 3 at Hotel Awadh Palace is best for events in Ayodhya Nagar, Bhopal. Hall 3 at Hotel Awadh Palace has best
+        spaces to suit different occasions and celebrations. You can get contact details, event packages, rental prices,
+        reviews at venueLook.com. Go ahead and make an enquiry for your event booking now!
+      </p>
+      <button class="btn add-to-cart" onclick="location.href='calender.html'">Check Availability</button>
+      <button class="btn buy-now" onclick="location.href='book.html'">Book Now</button>
+
+      <script>
+        mixpanel.track("Book Now Clicked");
+      </script>
+
+    </div>
+    <div class="details-grid">
+      <!-- Number of Rooms -->
+      <div class="detail-item">
+        <div class="icon">
+          <i class="fas fa-door-open"></i>
+        </div>
+        <div class="info">
+          <h3>Number of Rooms</h3>
+          <p>10 Rooms</p>
+        </div>
+      </div>
+
+      <!-- Total Capacity -->
+      <div class="detail-item">
+        <div class="icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="info">
+          <h3>Total Capacity</h3>
+          <p>200 Guests</p>
+        </div>
+      </div>
+
+      <!-- Number of Halls -->
+      <div class="detail-item">
+        <div class="icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <div class="info">
+          <h3>Number of Halls</h3>
+          <p>3 Halls</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
