@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Paste this right before your closing </head> tag -->
+    <script type="text/javascript">
+        (function (e, c) {
+            if (!c.__SV) {
+                var l, h; window.mixpanel = c; c._i = []; c.init = function (q, r, f) {
+                    function t(d, a) { var g = a.split("."); 2 == g.length && (d = d[g[0]], a = g[1]); d[a] = function () { d.push([a].concat(Array.prototype.slice.call(arguments, 0))) } } var b = c; "undefined" !== typeof f ? b = c[f] = [] : f = "mixpanel"; b.people = b.people || []; b.toString = function (d) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); d || (a += " (stub)"); return a }; b.people.toString = function () { return b.toString(1) + ".people (stub)" }; l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < l.length; h++)t(b, l[h]); var n = "set set_once union unset remove delete".split(" "); b.get_group = function () { function d(p) { a[p] = function () { b.push([g, [p].concat(Array.prototype.slice.call(arguments, 0))]) } } for (var a = {}, g = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), m = 0; m < n.length; m++)d(n[m]); return a }; c._i.push([q, r, f])
+                }; c.__SV = 1.2; var k = e.createElement("script"); k.type = "text/javascript"; k.async = !0; k.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" ===
+                    e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; e = e.getElementsByTagName("script")[0]; e.parentNode.insertBefore(k, e)
+            }
+        })(document, window.mixpanel || [])
+
+
+        mixpanel.init('f11d51802a52bc515ba07d55eb4ab01c', {
+            track_pageview: false,
+            autotrack: false,
+            record_sessions_percent: 100,
+            api_host: 'https://api-eu.mixpanel.com',
+        })
+
+        mixpanel.track("Home Page Viewed");
+
+    </script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="address border">
+                <p class="add-first">Rent to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-last">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="4">City</option>
+                    <option>Bhopal</option>
+                    <option>Indore</option>
+                    <option>Jabalpur</option>
+                    <option>Sanchi</option>
+                </select>
+                <input placeholder="Search Venue" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div>
+                <button onclick="location.href='./login.html'" class="nav-login">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </button>
+            </div>
+            <div class="nav-sign" onclick="location.href='./signup.html'">
+                Sign Up
+            </div>
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <b>Cart</b>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Vendors</p>
+                <p>List your Venue</p>
+                <p>Blogs</p>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-sec">
+        <div class="hero-msg">
+            <p>Find & Book The Best Venue For Every Special Event</p>
+        </div>
+    </div>
+    <div class="shop-sec">
+        <div class="box-1 box" onclick="location.href='./searchbhopal.html'">
+            <div class="box-content">
+                <h2>Venue in Bhopal</h2>
+                <div class="box-img" style="background-image: url('./bhopal-city.jpg');"></div>
+                <p><b>Venue|Vendors</b></p>
+            </div>
+        </div>
+        <div class="box-2 box" onclick="location.href='./bangalore.html'">
+            <div class="box-content">
+                <h2>Venue in Bangalore</h2>
+                <div class="box-img" style="background-image: url('./bangalore.jpg');"></div>
+                <p><b>Venue|Vendors</b></p>
+            </div>
+        </div>
+        <div class="box-3 box" onclick="location.href='./searchhydrabad.html'">
+            <div class="box-content">
+                <h2>Venue in Hydrabad</h2>
+                <div class="box-img" style="background-image: url('./hydrabad.jpg');"></div>
+                <p><b>Venue|Vendors</b></p>
+            </div>
+        </div>
+        <div class="box-4 box">
+            <div class="box-content" onclick="location.href='./udaipur.html'">
+                <h2>Venue in Udaipur</h2>
+                <div class="box-img" style="background-image: url('./Udaipur.jpg');"></div>
+                <p><b>Venue|Vendors</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="vendor-msg">
+        <p>Browse Vendors By Categories</p>
+    </div>
+    <div class="vendor">
+
+        <div class="box-1 box">
+            <div class="box-content">
+                <h2>Photographer</h2>
+                <div class="box-img" style="background-image: url('./photographer.jpg');"></div>
+                <p><b>See More</b></p>
+            </div>
+        </div>
+        <div class="box-2 box">
+            <div class="box-content">
+                <h2>Makeup Artist</h2>
+                <div class="box-img" style="background-image: url('./makeup.jpg');"></div>
+                <p><b>See More</b></p>
+            </div>
+        </div>
+        <div class="box-3 box">
+            <div class="box-content">
+                <h2>Mehndi Artist</h2>
+                <div class="box-img" style="background-image: url('./mehndi.jpg');"></div>
+                <p><b>See more</b></p>
+            </div>
+        </div>
+        <div class="box-4 box">
+            <div class="box-content">
+                <h2>Caterers</h2>
+                <div class="box-img" style="background-image: url('./caterers.jpeg');"></div>
+                <p><b>See More</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="heroin">
+        <div class="box-5 tbox" onclick="location.href='./vendor.html'">
+            <div class="box-content">
+                <h2>Hey! Are you a Vendor?</h2>
+                <div class="box-img2" style="background-image: url('./Screenshot\ 2024-10-28\ 085701.png');"></div>
+                <button class="style-button">List as a Vendor</button>
+            </div>
+        </div>
+        <div class="box-5 tbox" onclick="location.href='./venue.html'">
+            <div class="box-content">
+                <h2>Hey! Want to list your Venue?</h2>
+                <div class="box-img2" style="background-image: url('./venue-icon.png');"></div>
+                <button class="style-button">List a Venue</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            Back to top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Delhi</p>
+                <a>Wedding Venue</a>
+                <a>Corporate party Venue</a>
+                <a>Wedding Lawns</a>
+            </ul>
+            <ul>
+                <p>Gurgoan</p>
+                <a>Cocktail partyVenue</a>
+                <a>Kids birthday party Venue</a>
+                <a>Banquet Hall</a>
+            </ul>
+            <ul>
+                <p>Noida</p>
+                <a>Team Party Venue</a>
+                <a>Engagement Venue</a>
+                <a>Pub and Bars</a>
+            </ul>
+            <ul>
+                <p>Faridabad</p>
+                <a>Birthday Party Venue</a>
+                <a>Conference Venue</a>
+                <a>Farm house</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
